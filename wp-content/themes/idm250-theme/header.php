@@ -9,3 +9,12 @@
 </head>
 <body <?php body_class();?>>
 <?php wp_body_open();?>
+
+<header>
+    <p>LOGO GOES HERE</p>
+    <nav class="main-menu">
+        <?php
+        wp_nav_menu(['theme_location' => 'primary-menu']);
+        ?>
+    </nav>
+</header>
