@@ -1,3 +1,74 @@
-*{
-    color: hotpink;
+a{
+    color: var(--main-text-color);
+    text-decoration: none;
+}
+
+:root {
+    --main-bg-color: #FFFFFF;
+    --bg-color-2: #FAFAFA;
+    --bg-color-3: #F8F4F0;
+    --main-text-color: #101410;
+    --text-color-2: #729C47;
+}
+  
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color)
+}
+
+
+/* header nav */
+
+.main-menu{
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--main-text-color);
+    margin: 50px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu-item-40{
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 35px;
+    width: 20%;
+    margin-right: 600px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.insta-icon{
+    margin-bottom: 20px;
+}
+
+.foot-menu{
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-bottom: 35px;
+}
+
+.menu-item-29, .menu-item-34, .menu-item-35, .menu-item-36{
+    margin: 0 20px 0 20px;
 }
