@@ -60,24 +60,61 @@ add_post_type_support('page','excerpt');
  */
 function register_custom_post_types()
 {
-    // Register Shoes post type
+    // Register Plants post type
     register_post_type(
-        'shoes',
+        'Plants',
         [
             'labels' => [
-                'name' => __('Shoes'),
-                'singular_name' => __('Shoe')
+                'name' => __('Plants'),
+                'singular_name' => __('Plant')
             ],
             'public' => true,
             'has_archive' => true,
-            'rewrite' => ['slug' => 'shoes'],
+            'rewrite' => ['slug' => 'Plants'],
             'supports' => ['title', 'editor', 'thumbnail', 'excerpt'],
+            'taxonomies' => ['Plant-categories'],
             'show_in_rest' => true,
         ]
     );
 }
 
 add_action('init', 'register_custom_post_types');
+
+/**
+ * Register custom taxonomies
+ * @link https://developer.wordpress.org/reference/functions/register_taxonomy/
+ * @return void
+ */
+function register_custom_taxonomies()
+{
+    $args = [
+        'labels' => [
+            'name' => 'Plant Categories',
+            'singular_name' => 'Plant Category',
+            'search_items' => 'Search Plant Categories',
+            'all_items' => 'All Plant Categories',
+            'parent_item' => 'Parent Plant Category',
+            'parent_item_colon' => 'Parent Plant Type:',
+            'edit_item' => 'Edit Plant Category',
+            'update_item' => 'Update Plant Category',
+            'add_new_item' => 'Add New Plant Category',
+            'new_item_name' => 'New Plant Type Name',
+            'menu_name' => 'Plant Categories',
+        ],
+        'hierarchical' => true,
+        'show_ui' => true,
+        'show_admin_column' => true,
+        'query_var' => true,
+        'rewrite' => ['slug' => 'Plant/categories'],
+        'show_in_rest' => true,
+
+    ];
+
+    $taxonomy_name = 'Plant-categories'; // name of the taxonomy. Name should be in slug form (must not contain capital letters or spaces).
+    $taxonomy_association = ['Plants']; // post types to associate with this taxonomy
+    register_taxonomy($taxonomy_name, $taxonomy_association, $args);
+}
+add_action('init', 'register_custom_taxonomies');
 
 
 function register_theme_menus()
