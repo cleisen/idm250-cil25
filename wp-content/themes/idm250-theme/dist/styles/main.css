@@ -44,6 +44,9 @@ body {
     margin-right: 600px;
 }
 
+
+/* footer nav */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -72,3 +75,57 @@ footer{
 .menu-item-29, .menu-item-34, .menu-item-35, .menu-item-36{
     margin: 0 20px 0 20px;
 }
+
+
+/* single-plants */
+
+/* fonts */
+
+h2{
+    font-family: p22-mackinac-pro, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 34px;
+    color: var(--text-color-2);
+}
+
+h6{
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+
+h4{
+    font-family: degular, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    color: var(--text-color-2);
+}
+
+h5{
+    font-family: degular, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+
+h3{
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 26px;
+    color: var(--main-text-color);
+}
+
+ul, ol{
+    font-family: degular, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: var(--main-text-color);
+}
+
