@@ -139,7 +139,10 @@ p{
 .wp-container-2{
     display: flex;
     justify-content: space-evenly;
+}
 
+.wp-image-52{
+    margin-top: 60px;
 }
 
 .wp-container-1{
@@ -155,9 +158,10 @@ p{
 
 /* page elements */
 
-.wp-container-6{
+.wp-block-group.wp-container-5{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 40px;
 }
 
 .is-layout-constrained{
@@ -196,8 +200,17 @@ ol {
     line-height: 30px;
 }
 
+.wp-container-10{
+    margin: 60px 0 50px 0;
+    background-color: var(--bg-color-2);
+}
+
+.wp-container-6{
+    padding: 20px 200px 0 0;
+}
+
 .wp-block-quote{
-    padding: 45px 40px 45px 30px;
+    padding: 45px 45px 45px 30px;
     border: 2px solid var(--text-color-2);
     border-radius: 300px;
     border-bottom-right-radius: 0px;
