@@ -127,3 +127,54 @@ function register_theme_menus()
     );
 }
 add_action('init', 'register_theme_menus');
+
+function register_theme_sidebars()
+{
+    register_sidebar([
+        'name' => 'Page Sidebar',
+        'id' => 'page-sidebar',
+    ]);
+}
+add_action('widgets_init', 'register_theme_sidebars');
+
+function my_acf_json_save_point($path)
+{
+    // update path
+    $path = get_stylesheet_directory() . '/my-custom-folder';
+
+    // return
+    return $path;
+}
+add_filter('acf/settings/save_json', 'my_acf_json_save_point');
+
+
+function my_acf_json_load_point( $paths ) {
+    
+    // remove original path (optional)
+    unset($paths[0]);
+    
+    
+    // append path
+    $paths[] = get_stylesheet_directory() . '/my-custom-folder';
+    
+    
+    // return
+    return $paths;
+    
+}
+add_filter('acf/settings/load_json', 'my_acf_json_load_point');
+
+
+function add_acf_options_page()
+{
+    if (function_exists('acf_add_options_page')) {
+        acf_add_options_page([
+            'page_title' => 'Theme General Settings',
+            'menu_title' => 'Theme Settings',
+            'menu_slug' => 'theme-general-settings',
+            'capability' => 'edit_posts',
+            'redirect' => false,
+        ]);
+    }
+}
+add_action('init', 'add_acf_options_page');

@@ -1,14 +1,24 @@
 <?php get_header(); ?>
-<h1>404</h1>
 
-<p class="">
-    This page does not exist
-    </p>
-<p class="">
-    Sorry, we couldn&apos;t find the page
-        you&apos;re looking for.
-    </p>
+<div class="all-content">
+<div class="items">
+<p class="oops">
+    Oops!
+</p>
 
-<?php get_template_part('components/content');?>
+<div class="number">404</div>
+
+<p class="sorry">
+    Sorry! This page hasn&apos;t <span>sprouted</span> yet.
+</p>
+
+<div class="bottom-404">
+<div class="center">
+    <a href="Home" class="link">Back Home</a>
+</div>
+</div>
+
+</div>
+</div>
 
 <?php get_footer(); ?>
