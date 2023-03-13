@@ -364,6 +364,11 @@ h1{
     width: 30%;
     display: block;
     margin: 10px auto 100px auto;
+    font-family: miller-display, serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--main-text-color);
 }
 
 
