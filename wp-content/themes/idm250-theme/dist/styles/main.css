@@ -123,6 +123,7 @@ h3{
     font-weight: 400;
     font-style: italic;
     font-size: 26px;
+    line-height: 31px;
     color: var(--main-text-color);
 }
 
@@ -375,7 +376,7 @@ h1{
 /* bullet list card */
 
 .bullets{
-    padding-left: 50px;
+    padding-left: 0;
     padding-top: 13px;
     list-style-type: disc;
     line-height: 30px;
@@ -468,4 +469,128 @@ h1{
 
 .customer-img{
     padding-bottom: 15px;
+}
+
+
+
+/* about page - sidebar template */
+
+
+/* Sidebar group */
+
+main {
+    /*  Styles as a child element of container */
+    overflow: hidden;
+
+    /*  Styles as a parent of aside and article */
+    display: flex;
+    margin: 30px 7%;
+}
+
+article {
+    flex: 0 0 80%;
+}
+
+aside {
+
+    }
+    
+.sidebar-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidebar-img{
+    width: 100%;
+    height: auto;
+}
+
+.sidebar-text{
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 2px solid var(--text-color-2);
+}
+
+.logo-cloud{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 20px 35px 20px;
+}
+
+.sidebar-text-bold{
+    text-align: center;
+}
+
+
+/* about page hero content */
+
+.container-hero-img{
+    margin-left: 0;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.about-hero-img{
+    width: 92%;
+    height: auto;
+    text-align: left;
+}
+
+.about-hero-title{
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    color: var(--main-text-color);
+    text-align: left;
+}
+
+/* quote */
+
+.content h3{
+    margin: 0 40px 0 20px;
+    padding: 20px 80px;
+}
+
+/* our mission section */
+
+.content .wp-block-group{
+    text-align: center;
+    margin: 50px 70px 75px 40px;
+    background-color: var(--main-bg-color);
+}
+
+.content .is-layout-constrained{
+    padding: 80px;
+    width: auto;
+    height: auto;
+    border-top: 2px solid var(--main-text-color);
+    border-bottom: 2px solid var(--main-text-color);
+    border-radius: 0;
+}
+
+.content h2{
+    border-bottom: none;
+}
+
+/* bullets */
+
+.content ul{
+    padding-left: 50px;
+    padding-top: 13px;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    float: left;
+    line-height: 30px;
+}
+
+/* link w arrow */
+
+.link-arrow-about{
+    padding: 20px 140px 0 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 100px;
 }

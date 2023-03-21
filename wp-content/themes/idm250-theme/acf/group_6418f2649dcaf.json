@@ -1,11 +1,11 @@
 {
-    "key": "group_640eabab47e82",
-    "title": "Pull Quote",
+    "key": "group_6418f2649dcaf",
+    "title": "Sidebar",
     "fields": [
         {
-            "key": "field_640eabab5bba8",
-            "label": "Accent Image",
-            "name": "accent_image",
+            "key": "field_6418f26489761",
+            "label": "Sidebar Image",
+            "name": "sidebar_image",
             "aria-label": "",
             "type": "image",
             "instructions": "",
@@ -28,9 +28,9 @@
             "preview_size": "medium"
         },
         {
-            "key": "field_640eabc65bba9",
-            "label": "Quote Text",
-            "name": "quote_text",
+            "key": "field_6418f3b8f7d10",
+            "label": "Sidebar Text",
+            "name": "sidebar_text",
             "aria-label": "",
             "type": "text",
             "instructions": "",
@@ -48,31 +48,11 @@
             "append": ""
         },
         {
-            "key": "field_640eabd75bbaa",
-            "label": "Name of Customer",
-            "name": "customer_name",
+            "key": "field_6418f44532178",
+            "label": "Logo Cloud",
+            "name": "logo_cloud",
             "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
-        {
-            "key": "field_640eabfb5bbab",
-            "label": "Image of Customer",
-            "name": "customer_image",
-            "aria-label": "",
-            "type": "image",
+            "type": "gallery",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -83,6 +63,8 @@
             },
             "return_format": "array",
             "library": "all",
+            "min": 1,
+            "max": 3,
             "min_width": "",
             "min_height": "",
             "min_size": "",
@@ -90,15 +72,36 @@
             "max_height": "",
             "max_size": "",
             "mime_types": "",
+            "insert": "append",
             "preview_size": "medium"
+        },
+        {
+            "key": "field_6418f52265f62",
+            "label": "Sidebar Text Bold",
+            "name": "sidebar_text_bold",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         }
     ],
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "23"
+                "value": "templates\/sidebar.php"
             }
         ]
     ],
@@ -111,5 +114,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679347698
+    "modified": 1679357255
 }

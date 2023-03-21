@@ -5,7 +5,7 @@
 <?php get_template_part('components/paragraph-block');?>
 <?php get_template_part('components/image-caption');?>
 
-<div class="cards">
+<div class="cards content">
 <?php get_template_part('components/bullet-list-card');?>
 <?php get_template_part('components/numbered-list-card');?>
 </div>

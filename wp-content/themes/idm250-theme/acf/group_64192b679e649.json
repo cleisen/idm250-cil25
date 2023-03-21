@@ -1,9 +1,9 @@
 {
-    "key": "group_640ea6ba98577",
-    "title": "Link w\/ arrow",
+    "key": "group_64192b679e649",
+    "title": "Link w\/ arrow (about page)",
     "fields": [
         {
-            "key": "field_640ea6ba8205c",
+            "key": "field_64192b67a1577",
             "label": "Link to Page",
             "name": "page_link",
             "aria-label": "",
@@ -23,7 +23,7 @@
             "allow_null": 0
         },
         {
-            "key": "field_640ea6e68205d",
+            "key": "field_64192b67a1582",
             "label": "Image for link",
             "name": "link_image",
             "aria-label": "",
@@ -51,9 +51,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "23"
+                "value": "templates\/sidebar.php"
             }
         ]
     ],
@@ -66,5 +66,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679371195
+    "modified": 1679371758
 }
