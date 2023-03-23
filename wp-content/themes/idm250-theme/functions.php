@@ -19,10 +19,10 @@ function theme_scripts_and_styles()
         [],
         null
     );
-    // Load in Google Fonts
+    // Load in Adobe Fonts
     wp_enqueue_style(
-        'google-fonts',
-        'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap',
+        'adobe-fonts',
+        'https://use.typekit.net/zik2ksl.css',
         [],
         null
     );

@@ -46,9 +46,9 @@
     "location": [
         [
             {
-                "param": "page",
+                "param": "page_template",
                 "operator": "==",
-                "value": "23"
+                "value": "default"
             }
         ]
     ],
@@ -61,5 +61,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1679347658
+    "modified": 1679435282
 }

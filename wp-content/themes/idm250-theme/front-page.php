@@ -1,13 +1,16 @@
-<?php get_header(); ?>
-<h1><?php echo get_the_title(); ?></h1>
+<?php get_header(); 
+/* Template Name: Homepage */?>
 
-<?php
+<?php get_template_part('components/homepage-hero');?>
+<div class="home-content">
+    <?php get_template_part('components/content');?>
+</div>
+<div class="popular-plants">
+    <?php get_template_part('components/popular-plant');?>
+    <?php get_template_part('components/popular-plant');?>
+    <?php get_template_part('components/popular-plant');?>
+    <?php get_template_part('components/popular-plant');?>
+</div>
 
-if (has_post_thumbnail()){
-    the_post_thumbnail();
-}
-?>
-
-<?php get_template_part('components/content');?>
 
 <?php get_footer(); ?>
